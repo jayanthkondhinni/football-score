@@ -1,0 +1,31 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <body>
+        <span id="heading">Live Scoring Site</span>
+        <div class="container">
+            <div>
+                <h3 style="color:white;margin:0px 0px 0px ;">HOME</h3>
+                <div id="screen1">0</div>
+                <button class="btn" onclick="hinc1()">+1</button>
+                <button class="btn" onclick="hinc2()">+2</button>
+                <button class="btn" onclick="hinc3()">+3</button>
+            </div>
+            <div>
+                <h3 style="color:white; margin: 0px 0px 0px;">GUEST</h3>
+                <div id="screen2">0</div>
+                <button class="btn" onclick="ginc1()">+1</button>
+                <button class="btn" onclick="ginc2()">+2</button>
+                <button class="btn" onclick="ginc3()">+3</button>
+
+            </div>
+        </div>
+        <button id="end" onclick="final()">END MATCH</button>
+        <p id="res"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
